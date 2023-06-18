@@ -1,0 +1,59 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+/* CSS presets */
+:root {
+    --font-headings: 'Montserrat', sans-serif;
+    --font-primary: 'Hind', sans-serif;
+    --color-white: #ffffff;
+}
+
+body {
+    font-family: var(--font-primary) !important;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: var(--color-white);
+}
+
+:is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+    font-family: var(--font-headings) !important;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+/* sidebar */
+.navbar-toggler:is(:focus) {
+    box-shadow: unset;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #727272;
+}
+
+.sidebar .nav-link.active {
+    color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+}
+
+/* nice select */
+.nice-select .list {
+    max-height: 50dvh !important;
+    overflow-y: scroll !important;
+}
